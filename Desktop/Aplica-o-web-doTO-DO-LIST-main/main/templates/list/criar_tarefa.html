@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>Criar Nova Tarefa</h1>
+{% endblock %}
+
+{% block content %}
+  <form method="post">
+    <label for="descricao">Descrição</label>
+    <input name="descricao" id="descricao" required>
+    <label>
+      <input type="checkbox" name="concluida"> Concluída
+    </label>
+    <label for="data_conclusao">Data de Conclusão</label>
+    <input type="date" name="data_conclusao" id="data_conclusao">
+    <button type="submit" class="btn btn-primary">Criar Tarefa</button>
+  </form>
+{% endblock %}
